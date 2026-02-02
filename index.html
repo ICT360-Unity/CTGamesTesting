@@ -18,7 +18,7 @@
                         <a href="#">Home</a>
                     </li>          
                     <li>
-                        <a href="#projects">Projects</a>
+                        <a href="#Projects">Projects</a>
                     </li>
                     </li>        
                     <li>
@@ -37,17 +37,21 @@
         <div class="container">
             <img src="Images/ProfilePic3.png" alt="">
              <h1>Hi, I'm Zerlina </h1>
-             <p>A passionate 3D and XR designer with expertise in crafting immersive, user-friendly, and visually engaging digital experiences. I specialize in 3D content, XR, and 3D web applications, building seamless interactions with modern web technologies. Explore my work and let's bring ideas to life!</p>
-         
+             <h5>A 3D, XR & Interactive Systems Developer</h5>
+             <p>I design and build interactive 3D and XR experiences, combining immersive, user-friendly visuals with strong system design and real-world simulation logic. I specialize in 3D content, XR, and 3D web applications, creating seamless interactions using Unity and modern web technologies.</p>
+        </div>
+        <div class="heroButtonsDiv">
+            <button class="CTABtn1"><a href="#projects" style="text-decoration: none; color:white">View Projects</a></button>
+            <button class="CTABtn2"><a href="#"></a>View Resume</button>
         </div>
     </header>
     <section class="aboutMe">
         <h1>ABOUT ME</h1>
-        <p>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
+        <!-- <p>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p> -->
         <div class="container">
             <div class="box">
                 <h2><i class="fas fa-arrows-alt"></i>What I Do</h2>
-                <p class="aboutmedesc">Some description here. Some description here. Some description here. Some description here. 
+                <p class="aboutmedesc">I design and build interactive 3D and XR experiences using Unity, blending technical problem-solving with creative visual clarity and intuitive interactions.
                 </p>
                 <H3>CONTACT</H3>
             </div>
@@ -58,36 +62,37 @@
                 <div class="skills-group">
                     <h4>3D & XR</h4>
                     <ul class="skills">
-                        <li class="skillname">Unity</li>
-                        <li class="skillname">Blender</li>
-                        <li class="skillname">Three.js</li>
-                        <li class="skillname">AR</li>
-                        <li class="skillname">VR</li>
+                        <li class="primaryskill">Unity</li>
+                        <li class="primaryskill">Blender</li>
+                        <li class="primaryskill">Three.js</li>
+                        <li class="primaryskill">AR</li>
+                        <li class="primaryskill">VR</li>
+                        <li class="primaryskill">React3Fiber</li>
                     </ul>
                 </div>
 
                <div class="skills-group">
-                    <h4>Web Development</h4>
+                    <h5>Web Development</h5>
                     <ul class="skills">
-                        <li class="skillname">HTML</li>
-                        <li class="skillname">CSS</li>
-                        <li class="skillname">JavaScript</li>
-                        <li class="skillname">Bootstrap</li>
-                        <li class="skillname">SASS</li>
-                        <li class="skillname">jQuery</li>
-                        <li class="skillname">React</li>
-                        <li class="skillname">React3Fiber</li>
-                        <li class="skillname">WordPress</li>
+                        <li class="secondaryskill">HTML</li>
+                        <li class="secondaryskill">CSS</li>
+                        <li class="secondaryskill">JavaScript</li>
+                        <li class="secondaryskill">Bootstrap</li>
+                        <li class="secondaryskill">SASS</li>
+                        <li class="secondaryskill">jQuery</li>
+                        <li class="secondaryskill">React</li>
+                      
+                        <li class="secondaryskill">WordPress</li>
                     </ul>
                 </div>
 
                 <div class="skills-group">
                     <h4>Tools & Others</h4>
                     <ul class="skills">
-                        <li class="skillname">Git</li>
-                        <li class="skillname">GitHub</li>
-                        <li class="skillname">SEO</li>
-                        <li class="skillname">Inkscape</li>
+                        <li class="secondaryskill">Git</li>
+                        <li class="secondaryskill">GitHub</li>
+                        <li class="secondaryskill">SEO</li>
+                        <li class="secondaryskill">Inkscape</li>
                     </ul>
                 </div>
 
@@ -96,49 +101,89 @@
         </div>
     </section>
 
-    <section id="projects" class="categoryBoxes">
+    <section class="projects" id="Projects">
         <h1>PROJECTS</h1>
-        <p>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
-        <div class="container">
-            <!-- <button class="box category" onclick="openCategory('All')">All  </button>  -->
-            <button class="box category" onclick="openCategory('3DModelling')"> 3D Modelling </button>
-            <button class="box category" onclick="openCategory('Gamedev')"> Unity/AR-VR </button>
-            <button class="box category" onclick="openCategory('Threejs')"> Three.js </button>
-            <!-- <button class="box category" onclick="openCategory('Webdev')"> Web Development </button>    -->
-        </div>  
-        <div id = categorycontentcontainer>
-            <div id="3DModelling" class="categorycontent grid-container">
-                <div><a href="#"><img src="Images/3D Models/CameraFramedTransparency.png"></a></div>
-                <div><a href="#"><img src="Images/3D Models/FirewoodFramed.png"></a></div>
-                <div><a href="#"><img src="Images/3D Models/Hearth1Framed.png"></a></div>
-                <div><a href="#"><img src="Images/3D Models/LaptopFramed.png"></a></div>
-                <div><a href="#"><img src="Images/3D Models/ISS1Framed.png"></a></div>
-                <div><a href="#"><img src="Images/3D Models/TeslaTruckFramed.png"></a></div>
-                <div><a href="#"><img src="Images/3D Models/EiffelTower.png"></a></div>
-                <div><a href="#"><img src="Images/3D Models/TajMahalFramed.png"></a></div>
-                <div><a href="#"><img src="Images/3D Models/GSLVFramed.png"></a></div>
+        <!-- <p>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p> -->
+        <div class="categorySection">
+            <div class="categories">
+                    <!-- <button class="box category" onclick="openCategory('All')">All  </button>  -->
+                    <button class="box category default" id="categoryBtn1" onclick="wrapper('Gamedev', 'categoryBtn1')"> Unity/AR-VR </button>
+                    <button class="box category" id="categoryBtn3" onclick="wrapper('Threejs', 'categoryBtn3')"> Three.js </button>
+                    <button class="box category" id="categoryBtn2" onclick="wrapper('Modelling', 'categoryBtn2')"> 3D Modelling </button>                    
+                    <!-- <button class="box category" onclick="openCategory('Webdev')"> Web Development </button>    -->
             </div>
+            <div id="categoryContentContainer">
+               
+                <div id="Gamedev" class="categorycontent grid-container">
+                    <div id="FeaturedProject">
+                        <div id="FeaturedProjectCard">
+                            <h5>Elevator Simulation System</h5>
+                            <h6>Unity | C# | System Design</h6>
 
-            <div id="Gamedev" class="categorycontent grid-container">
-                <a href="GameDevPages/PuzzleArcade.html"><img src="Images/GameDev/PuzzleArcadeFramed.png"></a>
-                <a href="GameDevPages/TowerShooter.html"><img src="Images/GameDev/TowerShooterFramed.png"></a>
+                            <div>
+                                <a href="GameDevPages/ElevatorSimualtor.html"><img src="Images/GameDev/Elevator.png"></a>
+                            </div>
+                            <div>
+                                Interactive Unity-based elevator behavior simulation focused on real-world logic and control.                                             
+                            </div>
+                        </div>
+                    </div>
+                    <div id="FeaturedProject">
+                        <div id="FeaturedProjectCard">
+                            <h5>Smart Parking Lot Management System</h5>
+                            <h6>Unity | C# | System Design</h6>
+                            <div>
+                                <a href="GameDevPages/ParkingLotManagement.html"><img src="Images/GameDev/ParkingMgmtScreen.png"></a>
+                            </div>
+                            <br>
+                            <div>
+                              A logic-driven Unity project that simulates a smart parking lot system, focusing on state management, rules, and clean separation between logic and UI.                                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ProjectCard">
+                        <h5>Puzzle Arcade</h5>
+                        <div>
+                            <a href="GameDevPages/PuzzleArcade.html"><img src="Images/GameDev/PuzzleArcadeFramed.png"></a>
+                        </div>
+                        <div>
+                           <li> Interactive multi-floor elevator logic</li>
+                           <li> State-driven system design</li>
+                           <li> Real-world behavior simulation</li>
+                           <li> Built in Unity</li>                        
+                        </div>
+                    </div>
+                    
+                    <div class="ProjectCard">
+                        <h5>Tower Shooter</h5>
+                        <div>
+                            <a href="GameDevPages/TowerShooter.html"><img src="Images/GameDev/TowerShooterFramed.png"></a>
+                        </div>
+                        <div>
+                           <li> Interactive multi-floor elevator logic</li>
+                           <li> State-driven system design</li>
+                           <li> Real-world behavior simulation</li>
+                           <li> Built in Unity</li>                        
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Threejs" class="categorycontent grid-container">
+                    <a href="#"><img src="Images/GameDev/PuzzleArcadeFramed.png">AR Room Plan</a>
+                    <a href="#"><img src="Images/GameDev/PuzzleArcadeFramed.png">AR Historical Monuments</a>
+                </div>
+                <div id="Modelling" class="categorycontent">
+                    <a href="#"><img src="Images/3D Models/Camera/snapshot1.jpg"></a>
+                    <a href="#"><img src="Images/3D Models/Firewood.png"></a>
+                    <a href="#"><img src="Images/3D Models/Laptop.png"></a>
+                    <a href="#"><img src="Images/3D Models/ISS1.png"></a>
+                    <a href="#"><img src="Images/3D Models/Tesla Truck.png"></a>
+                    <a href="#"><img src="Images/3D Models/EiffelTower.png"></a>
+                    <a href="#"><img src="Images/3D Models/Taj Mahal.png"></a>
+                    <a href="#"><img src="Images/3D Models/GSLV.png"></a>
+                </div>
             </div>
-
-            <div id="XRdev" class="categorycontent grid-container">
-                <a href="#"><img src="Images/GameDev/PuzzleArcadeFramed.png">AR Room Plan</a>
-                <a href="#"><img src="Images/GameDev/PuzzleArcadeFramed.png">AR Historical Monuments</a>
-            </div>
-
-            <div id="Threejs" class="categorycontent grid-container">
-                <p> 3D Web Development </p>
-                <div><a href="#"><img src="Images/3D Models/bowlingalleyFramed.png"></a></div>
-            </div>
-
-              <div id="Webdev" class="categorycontent grid-container">
-                <p> Web Development </p>
-            </div>
-
-        </div>
+         </div>  
     </section>
 
                 

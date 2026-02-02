@@ -26,7 +26,7 @@ ul{
 .container{
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 30px;
+    /* padding: 0 30px; */
 }
 /*
 img{
@@ -36,14 +36,15 @@ img{
 
 #navbar{
     /* background-color:#CCD5AE; */
-    /* background-color:#CCD5AE; */
     /* background-color:#E0E5B6; */
-    background-color:#FFFBDE;
+    /* background-color:#FFFBDE; */
+    background-color:khaki;
     color:white;
-    height: 60px;
+    height: 50px;
     position: sticky;
     top: 0;
     overflow: hidden;
+    z-index: 1000;
 }
 
 #navbar .logo{
@@ -59,8 +60,12 @@ img{
     /* font-weight: bold; */
 }
 
+#navbar li:hover{
+    background-color:black;
+}
+
 #navbar a:hover{
-    color:lightblue;
+    color:white;
 }
 
 #navbar .container{
@@ -85,7 +90,7 @@ img{
     min-height: 650px;
     display: flex;
     align-items:center;
-    justify-content: space-between;
+    flex-direction:column;
 }
 
 .header .container{
@@ -95,6 +100,30 @@ img{
     align-items:center;
     justify-content: space-around;
     /* background-color: #4682A9; */
+    padding-top:3.5em;
+    padding-bottom:1em;
+}
+
+.header button {
+    border-radius: 15px;
+    /* border: none; */
+    padding:0.75em;
+}
+
+.CTABtn1 {
+    background-color: #4682A9;
+    color: white;
+    border:none;
+    padding:0.8em;
+}
+
+.CTABtn2{
+    border:solid black 2px;
+    color: black;
+}
+ 
+.heroButtonsDiv{
+/* background-color: #4682A9; */
 }
 
 .header .box p{
@@ -102,7 +131,7 @@ img{
 }
 
 .header .container p{
-    width:50%;
+    width:45%;
     font-size:1.2em;
     text-align:center;
 }
@@ -119,68 +148,10 @@ img{
     max-width:400px;
 }
 
-.categoryBoxes{
-    /* background-color:cadetblue; */
-    /* background-color:#4682A9; */
-    padding:4rem;
-}
 
-.categoryBoxes h1{
-    text-align: center;
-    font-size:2.5rem;
-    margin:0;
-    /* color: #fff; */
-}
-
-.categoryBoxes h2{
-    color:#fff;
-    font-size:1rem;
-    margin:0;
-}
-
-
-
-.categoryBoxes p{
-    text-align: center;
-    color:#fff;
-}
-
-.categoryBoxes .container{
-    margin-top:2rem;
-    display: flex;
-}
-
-
-
-.categoryBoxes .category{
-    align-self: center;
-    text-align: center;
-}
-
-.categorycontent {
-  display:none;
-  color: white;
-  display: none;
-  text-align: center;
-
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns:  repeat(auto-fit, minmax(400px, 1fr));
-  gap: 0.1px;
-  margin-top: 1px;
-  grid-auto-rows: 400px;
-  /* margin:2px; */
-  /* background-color: #4682A9; */
-}
-
-.categorycontent img {
-    /* border-radius: 20px; */
-    width: 100%;
-    height: 100%;       /* Fill the row */
-    object-fit:contain;
-    /* margin-bottom: 1rem; */
+.aboutMe{
+    /* background-color:aqua; */
+    padding-top:5rem;
 }
 
 .aboutMe h1{
@@ -217,11 +188,11 @@ img{
 }
 
 .aboutMe .container .box{
-    background-color:#91C8E4;
+    background-color: rgba(145, 200, 228, 0.2);
     color:#333;
     margin: 20px 10px;
     padding:10px 20px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 
@@ -238,7 +209,7 @@ img{
     font-size: 1rem;
     color: #fff;
     padding:10px;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: #333;
     text-align: center;
 }
@@ -258,7 +229,7 @@ img{
 }
 
 .skills-group h4 {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     margin-bottom: 0.5rem;
     color: #333;
 }
@@ -274,13 +245,37 @@ img{
 .skillname {
     background: white;
     padding: 10px 16px;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-size: 14px;
+    font-size: 1rem;
     color: #333;
     font-weight: 500;
     transition: transform 0.2s ease;
 }
+
+.primaryskill{
+   background: #4f86c6;
+    padding: 10px 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: white;
+    /* font-weight: 500; */
+    transition: transform 0.2s ease; 
+}
+
+.secondaryskill{
+   background: white;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 0.75rem;
+    color: #333;
+    font-weight: 500;
+    transition: transform 0.2s ease; 
+}
+
 
 .skillname:hover {
     transform: scale(1.08);
@@ -302,43 +297,120 @@ img{
     max-width:35%;
 }
 
-#projects .container .box {
-/* background-color: #555; */
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;   
+.projects{
+    margin-top:5rem;
 }
 
-.categoryBoxes .box{
-    flex:1;
-    /* background-color: #fff; */
-    background-color:#4682A9;
-    color:#fff;
-     /* border-radius: 10px; */
-    /* margin: 20px 10px; */
+.projects h1{
+    text-align: center;
+    font-size:2.5rem;
+    margin:0.5rem;
+    color: #333;
+}
+
+
+.projects .categorySection{
+    /* background-color: darkorchid; */
+    display: flex;
+    justify-content: space-around;
+    padding:2rem;
+}
+
+
+.projects .categories {
+    display: flex;
+    flex-direction: column;
+    width:35%;
+
+}
+
+.projects .categories .box {
+    padding: 3em;
+    border-radius: 10px 0px 0px 10px;
+    border: solid 1px black;
+    /* margin-top:0.1rem; */
+    background-color: rgba(145, 200, 228, 0.3);
+    /* margin-right:10px; */
+    /* background-color: #4682A9; */
+    /* background-color: #333; */
+}
+
+.projects .categories .default{
+    background-color:#333;
+    color:white;
+}
+
+.projects .categories :hover{
+    /* background-color:#242424; */
+}
+
+.projects #categoryContentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content:right;
+    width:65%;
+    background-color:#333;
+    /* padding-right:15%; */
+}
+
+.projects #categoryContentContainer #FeaturedProject{
+    color:white;
+    margin-top:1rem;
+}
+
+.projects #categoryContentContainer #FeaturedProjectCard{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding:2rem;
+    color:white;
+    background-color:#242424;
+    border: solid 1px white;
+    margin : 1rem 2rem 2rem 2rem;
     box-shadow: 0 3px 5px rgba(0,0,0,0.6);
-    border: none;
-    /* align-items: center; */
-    /* text-align: center; */
-    padding:20px 10px;
+    /* background-color: #4f86c6; */
 }
 
-#projects .container .box:hover {
-    background-color: #FFFBDE;
-    color:black;
+#Gamedev{
+    display: grid;
 }
 
- .category a{
-         text-decoration: none;
-    }
+.projects #categoryContentContainer .ProjectCard{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding:2rem;
+    width:50%;
+    color:white;
+    background-color:#242424;
+    border: solid 1px white;
+    margin : 1rem 2rem 2rem 2rem;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.6);
+    /* background-color: #4f86c6; */
+}
 
-#categorycontentcontainer .categorycontent{
-    display: none;
+.projects #categoryContentContainer #FeaturedProjectFlex {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding:2rem;
+    color:white;
+    border: solid 2px black;
+    margin : 1rem 2rem 2rem 2rem;
+    /* background-color: #4f86c6; */
+}
+
+.projects #categoryContentContainer .categorycontent{
+    margin:1rem;
+
+}
+
+.projects #categoryContentContainer img{
+    width:85%;
+}
+
+#Threejs, #Modelling{
+    display:none;
 }
 
 @media(max-width:768px){
@@ -373,37 +445,8 @@ img{
     }
 
     .header img{
-        max-width:150px;
+        max-width:50px;
     }
-
-    .categoryBoxes .container{
-        /* display:block;
-        text-align:center; */
-        flex-direction: column;
-        padding:20px;
-        text-align:center;
-        /* background-color: #333; */
-    }
-
-    .categoryBoxes .box{
-        flex:1;
-        width:75%;
-        background-color: #fff;
-        border-radius: 10px;
-        margin: 20px 10px;
-        box-shadow: 0 3px 5px rgba(0,0,0,0.6);
-        /* justify-content:flex-end; */
-        align-items: center;
-        text-align: center;
-        padding:20px 10px;
-    }
-
-    .categoryBoxes .category{
-        align-self: center;
-        text-align: center;
-        /* color:blue; */
-    }
-
 
     .aboutMe .container{
         width:90%;
@@ -436,6 +479,9 @@ img{
         gap: 12px;
     }
 }
+
+
+
 
 @media(max-width:992px){
 
@@ -476,7 +522,7 @@ img{
     color:#333;
     margin: 20px 10px;
     padding:10px 20px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 

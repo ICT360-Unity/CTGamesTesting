@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pages.css">
+    <script src="index.js"></script>
+    <title>Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">Zerlina Jacob</div>
+            <ul class="nav">
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>        
+                <li>
+                    <a href="/index.html#Projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#">Resume</a>
+                </li>        
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+         </div>
+    </nav>
+    <header class="pageHeader">
+                
+    </header>
+    <section class="projectsDescContainer">     
+        <!-- <p>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p> -->
+       
+        <div class="projectsList">
+            <h1>Smart Parking Lot Management System (Unity)</h1>
+            <div>
+                <div class="projectBox">
+                    <div class="projectMedia">
+                        <video width="700" controls>
+                        <source src="../Images/GameDev/SmartParkingLot.mp4" type="video/mp4">
+                        <!-- <source src="Images/ElevatorSimualtion.ogg" type="video/ogg"> -->
+                        Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="projectFeatures">
+                            <li> Interactive multi-floor elevator logic</li>
+                            <li> State-driven system design</li>
+                            <li> Real-world behavior simulation</li>
+                            <li> Built in Unity</li>   
+                    </div>
+                </div>
+                <div>
+                    <button class="CTABtn1"><a href="https://github.com/Zerlina84/Elevator-Simulation-System" style="text-decoration: none; color:white" target="_blank">View on Github</a></button>
+                    <button class="CTABtn1"><a href="../index.html#Projects" style="text-decoration: none; color:white" target="_blank">Back to Projects</a></button>
+                </div>
+                <div>
+                    <div class="caseStudy">
+                        <br>
+                        <h4>Problem</h4>
+                        <div>
+                            Managing parking availability requires accurate state tracking, deterministic entry/exit rules, and clear visibility for users.
+This project simulates a smart parking lot system with an emphasis on logic correctness and system design, rather than visual complexity.
+                        </div>
+                        <br>
+                        <h4>Approach</h4>
+                        <div>
+                         The system is built using a logic-first architecture, where all parking rules and state transitions are handled by a central manager.
+                         <br>
+                         <br>
+                         <b>Key design principles:</b>
+                        <br>
+                        <ul>
+                            <li>Centralized state management</li>
+                            <li>UI acts as a visual layer only</li>
+                            <li>No business logic inside UI components</li>
+                            <li>System invariants enforced at all times</li>
+                        </ul>
+                        <br>
+                        <h4>Core System Flow</h4>
+                        <div>
+                          <li>Vehicle entry assigns the first available slot</li>
+
+                          <li>Vehicle exit frees a specific occupied slot</li>
+
+                          <li>Slot availability and counts update automatically</li>
+
+                          <li>System invariant maintained:
+Occupied + Available = Total Slots</li>
+                          <br>
+                         
+                        </div>
+                        <br>
+                        <h4>Why This Design</h4>
+                        <div>
+                           <b>This approach ensures:</b>
+                        <ul>
+                          <li>Predictable behavior</li>
+                          <li>Easy debugging</li>
+                          <li>Scalability to multi-lot systems</li>
+                          <li>Clear separation of concerns</li>
+                        </ul>
+                         <br>
+                        The architecture is intentionally designed to support future expansion (multi-lot management) without restructuring core logic.
+                        </div>
+                        <br>
+                         <h4>Tools & Technologies</h4>
+                        <div>
+                          <li>Unity</li>
+                          <li>C#</li>
+                        </div>
+                        <br>
+                          <h4>Future Improvements</h4>
+                        <div>
+                          <li>Queue-based handling of multiple floor requests</li>
+                          <li>Door open/close logic with safety constraints</li>
+                          <li>First-person interaction mode (prototype in progress on a separate branch)</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
