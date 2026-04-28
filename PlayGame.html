@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pop the Balloons</title>
+    <style>
+        body { 
+            display: flex; 
+            justify-content: center; 
+            flex-direction: row;
+            align-items: center; 
+            height: 100vh; 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            background-color: #f8f8f8;
+            color: #333;
+            margin-top: 0.5rem;
+        }
+ 
+    </style>
+<link rel="stylesheet" href="main.css">
+
+<script>
+
+    function goBackToHome() {
+    window.location.href = "index.html";
+    }
+
+    window.onload = function () {
+        const params = new URLSearchParams(window.location.search);
+        const game = params.get("game");
+        const frame = document.getElementById("gameFrame");
+        frame.src = game || "Games/TypeWithKeyboard/index.html";
+    }
+
+</script>
+</head>
+<body>
+    <a id="goback" href = "index.html"><h1>Go back</h1></a>
+    <div id="GameWindow">
+        <iframe 
+            id="gameFrame"
+            width="1140" 
+            height="510"
+            style="border:none;">
+        </iframe>
+       <!-- <iframe allow="fullscreen; autoplay;" allowfullscreen width="795" height="690" frameborder="0" src="https://www.educaplay.com/game/28225216-computer_parts.html"></iframe> -->
+    </div>
+
+    
+</body>
+
+</html>
