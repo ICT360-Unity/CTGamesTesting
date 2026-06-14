@@ -4,22 +4,127 @@
 
 #contentContainer{
     font-family: Arial, sans-serif; 
-    display: flex;
-    /* flex-direction: column; */
+}
+
+body{
+    background-color:#F8FAFC;
+}
+
+#contentContainer h1{
+    background-color: #DAF9DE;
+    padding:1rem;
+    align-content: center;
     text-align: center;
-    justify-content:center;
 }
 
-#grade1{
-    margin: 0 5rem 0 5rem;
-    padding:3rem;
-    border:2px solid black; 
-    width:50%;
+h1, h2, h3{
+    text-align: center;
 }
 
-#grade2{
-    margin-right: 5rem;
-    padding:3rem;
-    border:2px solid black; 
-    width: 50%;
+
+#category1{
+    margin: 0 1rem 0 1rem;
+    padding:1rem;
+    width:95%;
+    display: flex;
+    align-content: center;
+    flex-flow:row wrap;
+    justify-content: space-evenly;    
+}
+
+.CardLink{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+    align-content: center;
+}
+
+.ProjectCard{
+    background-color: #FEEBF6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:30%;
+    border: solid 1px black;
+    padding:1rem;
+    margin-bottom: 0.5rem;
+}
+/* 
+.ProjectCard a{
+    align-items: center;
+} */
+
+.ProjectCard img{
+    width:90%;
+    margin:0;
+    padding-left: 1.5rem;
+}
+
+/* mobile */
+@media(max-width:768px){
+/* Styles */
+
+    h1{
+        font-size: 1.4rem;
+    }
+
+    #category1{
+         width:85%;
+    }
+    .ProjectCard{
+        width:80%;
+        border: solid 1px black;
+        /* padding:1rem; */
+    }
+
+    .ProjectCard img{
+        width:80%;
+        margin:0;
+        padding-left: 1.5rem;
+    }
+}
+
+
+
+@media(min-width:769px) and (max-width:1024px){
+/* Styles */
+    h1{
+
+        font-size: 1.6rem;
+    }
+
+    #category1{
+    width:92%;
+}
+    .ProjectCard{
+        /* background-color: aqua; */
+        width:40%;
+        border: solid 1px black;
+        /* padding:1rem; */
+    }
+
+    .ProjectCard img{
+        width:80%;
+        margin:0;
+    }
+}
+
+
+@media(min-width:1025px) and (max-width:1250px){
+/* Styles */
+    h1{
+
+        font-size: 1.7rem;
+    }
+    .ProjectCard{
+        /* background-color: chartreuse; */
+        width:30%;
+        border: solid 1px black;
+        /* padding:0.1rem; */
+    }
+
+    .ProjectCard img{
+        width:80%;
+        margin:0;
+    }
 }
